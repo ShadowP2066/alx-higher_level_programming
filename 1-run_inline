@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# This is a shell script that runs Python code
+# The Python code is saved in the environment variable $PYCODE
+
+python -c "$PYCODE"
