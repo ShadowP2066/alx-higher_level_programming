@@ -1,6 +1,2 @@
 #!/bin/bash
-
-# This is a shell script that runs a Python script
-# The Python file name is saved in the environment variable $PYFILE
-
-python "$PYFILE"
+python3 <<< $PYCODE
