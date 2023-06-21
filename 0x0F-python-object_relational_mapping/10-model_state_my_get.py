@@ -1,21 +1,32 @@
 #!/usr/bin/python3
-"""
-Prints the first State object from the database
-"""
-from sys import argv
+'''task 10 script'''
+
 from model_state import Base, State
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
+import sys
 
-if __name__ == "__main__":
-    engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'
-                           .format(argv[1], argv[2], argv[3]),
+
+if __name__ == '__main__':
+    username = sys.argv[1]
+    password = sys.argv[2]
+    db_name = sys.argv[3]
+    state_name = sys.argv[4]
+    host = 'localhost'
+    port = '3306'
+
+    engine = create_engine('mysql+mysqldb://{}:{}@{}:{}/{}'.format(
+                           username, password, host, port, db_name),
                            pool_pre_ping=True)
     Session = sessionmaker(bind=engine)
-    session = Session()
-    state = session.query(State).filter(State.name == argv[4]).first()
-    if state:
-        print("{}".format(state.id))
+    local_session = Session()
+    result = local_session.query(State).filter(
+                            State.name.like(state_name)
+                            ).first()
+    local_session.close()
+    engine.dispose()
+
+    if result:
+        print(result.id)
     else:
-        print("Not found")
-    session.close()
+        print('Not found')
