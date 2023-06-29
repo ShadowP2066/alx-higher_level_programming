@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 0x12. Javascript - Warm up
 
 ## Description 
@@ -25,3 +26,6 @@ Files | Description
 [102-add_me_maybe.js](./102-add_me_maybe.js) | JS function that increments and calls a function
 [103-object_fct.js](./103-object_fct.js) | JS script that adds a new function incr that increments the integer value of the object myObject
 
+=======
+# 0x12. Javascript - Warm up
+>>>>>>> a69eb76aad990952bfcef294a5b84901327bdc40
