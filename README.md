@@ -15,6 +15,15 @@ Simultaneously, I continued to reinforce and expand my skills in C and shell scr
 * [0x09. Python - Everything is object](./0x09-python-everything_is_object)
 * [0x0A. Python - Inheritance](./0x0A-python-inheritance)
 * [0x0B. Python - Input/Output](./0x0B-python-input_output)
+* [0x0C. Python - Almost A Circle](./0x0C-python-almost_a_circle)
+* [0x0D. SQL - Introduction](./0x0D-SQL_introduction)
+* [0x0E. SQL - More Queries](./0x0E-SQL_more_queries)
+* [0x0F. Python - Object Relational Mapping](./0x0F-python-object_relational_mapping)
+* [0x10. Python - Network 0](0x10-python-network_0)
+* [0x11. Python - Network 1](0x11-python-network_1)
+* [0x12. JavaScript - Warm up](./0x12-javascript-warm_up)
+* [0x13. JavaScript - Objects, Scopes and Closures](./0x13-javascript_objects_scopes_closures)
+* [0x14. Javascript - Web scraping](./0x14-javascript-web_scraping)
 
 
 
